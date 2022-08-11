@@ -1,0 +1,14 @@
+# ---> Intimacy
+_bin/
+_tmp/
+
+# ---> Garbage
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+*.stackdump
+[Dd]esktop.ini
+*~
+.Trash-*
