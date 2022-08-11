@@ -1,3 +1,3 @@
-# baglama
+# Bağlama
 
-Dispositif de publication expérimental pour le site rebetiko.cc
+Un dispositif de publication expérimental développé pour le site [Rébétiko](rebetiko.cc).
