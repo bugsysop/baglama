@@ -26,10 +26,15 @@ function slate_add_editor_styles() {
 }
 
 add_action( 'admin_head', 'slate_colors' );
+
+/*
+ *
 add_action( 'login_head', 'slate_colors' );
 function slate_colors() {
 	include( 'assets/css/dynamic.php' );
 }
+ *
+ */
 
 // Engine
 
