@@ -1,9 +1,12 @@
 <?php
-add_action('after_setup_theme', 'tmprs_remove_post_format', 15);
-function tmprs_remove_post_format() { remove_theme_support('post-formats'); }
-// Bye bye JQuery
-add_action('wp_enqueue_scripts', 'tmprs_deregister_jquery');
-function tmprs_deregister_jquery() { if ( !is_admin() ) {wp_deregister_script('jquery');} } 
+// Post formats
+add_action('after_setup_theme', 'baglama_remove_post_formats', 15);
+function baglama_remove_post_formats() { remove_theme_support('post-formats'); }
+
+// Bye bye JQuery from frontend
+add_action('wp_enqueue_scripts', 'baglama_deregister_jquery');
+function baglama_deregister_jquery() { if ( !is_admin() ) {wp_deregister_script('jquery');} } 
+
 // Emoji
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
