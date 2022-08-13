@@ -29,6 +29,6 @@ Liste de personnes dont du code est ré/utilisé :
 
 ### Licence
 
-[GNU General Public License v2 or later](/LICENSE)   
-La version officielle de cette licence est disponible sur le site du [Projet GNU]](http://www.gnu.org/licenses/gpl-2.0.html).   
+[GNU General Public License v2 or later](/_aris/baglama/LICENSE)   
+La version officielle de cette licence est disponible sur le site du [Projet GNU](http://www.gnu.org/licenses/gpl-2.0.html).   
 Un traduction française non officielle se trouve sur le site de l’association [April](https://www.april.org/licence-publique-generale-gnu-version-2-traduction-april)
