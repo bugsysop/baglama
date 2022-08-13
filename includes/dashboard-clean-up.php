@@ -1,6 +1,6 @@
 <?php
-add_action( 'admin_init', 'tmprs_remove_dashboard_meta' ); 
-function tmprs_remove_dashboard_meta() {
+add_action( 'admin_init', 'baglama_remove_dashboard_meta' ); 
+function baglama_remove_dashboard_meta() {
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
 	remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
 	remove_meta_box( 'dashboard_primary', 'dashboard', 'normal' );

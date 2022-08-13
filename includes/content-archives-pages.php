@@ -5,8 +5,8 @@
  */
 
 // Remove title prefix from archives pages
-add_filter( 'get_the_archive_title', 'tmprs_remove_category', 10, 2 );
-function tmprs_remove_category( $title ) {
+add_filter( 'get_the_archive_title', 'baglama_remove_category', 10, 2 );
+function baglama_remove_category( $title ) {
 	if ( is_category() ) {
 		$title = single_cat_title( '', false );
 	}

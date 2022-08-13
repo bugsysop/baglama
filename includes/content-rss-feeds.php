@@ -1,7 +1,7 @@
 <?php
-add_filter( 'the_excerpt_rss', 'tmprs_thumbnails_in_rss' );
-add_filter( 'the_content_feed', 'tmprs_thumbnails_in_rss' );
-function tmprs_thumbnails_in_rss( $content ) {
+add_filter( 'the_excerpt_rss', 'baglama_thumbnails_in_rss' );
+add_filter( 'the_content_feed', 'baglama_thumbnails_in_rss' );
+function baglama_thumbnails_in_rss( $content ) {
 	global $post;
 	if ( has_post_thumbnail( $post->ID ) ) {
 		$content = '<figure>' . get_the_post_thumbnail( $post->ID, 'medium' ) . '</figure>' . $content;
@@ -9,8 +9,8 @@ function tmprs_thumbnails_in_rss( $content ) {
 	return $content;
 }
 
-add_filter('posts_where', 'tmprs_publish_later_on_feed');
-function tmprs_publish_later_on_feed($where) {
+add_filter('posts_where', 'baglama_publish_later_on_feed');
+function baglama_publish_later_on_feed($where) {
     global $wpdb;
     if ( is_feed() ) {
         // timestamp in WP-format

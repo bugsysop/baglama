@@ -4,8 +4,8 @@
 // https://wpmudev.com/blog/customize-login-page/
 
 // Custom style for login page only
-add_action('login_head', 'tmprs_custom_style');
-function tmprs_custom_style() {
+add_action('login_head', 'baglama_custom_style');
+function baglama_custom_style() {
 	echo '<!-- BAGLAMA -->';
 	echo '<style type="text/css">';
 	echo 'h1 a { background: url("' . esc_url( plugins_url('../assets/img/baglama-login-logo.png', __FILE__ ) ) . '") no-repeat !important; }';
@@ -15,16 +15,16 @@ function tmprs_custom_style() {
 }
 
 // Login page logo link
-add_filter( 'login_headerurl', 'tmprs_login_logo_link' );
-function tmprs_login_logo_link() {
+add_filter( 'login_headerurl', 'baglama_login_logo_link' );
+function baglama_login_logo_link() {
 	return get_bloginfo( 'url' );
 }
 
 // Change the logo Title attribute
-function tmprs_change_login_logo_title() {
+function baglama_change_login_logo_title() {
 	return get_option('blogname');
 }
-add_filter('login_headertitle', 'tmprs_change_login_logo_title');
+add_filter('login_headertitle', 'baglama_change_login_logo_title');
 
 // Remove login page language switcher
 
