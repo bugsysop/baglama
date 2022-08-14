@@ -42,18 +42,18 @@ if ( is_admin() ) {
 
 // Modules
 
-include_once plugin_dir_path( __FILE__ ).'includes/wordpress-config.php';
-include_once plugin_dir_path( __FILE__ ).'includes/head-clean-up.php';
-include_once plugin_dir_path( __FILE__ ).'includes/site-support.php';
-include_once plugin_dir_path( __FILE__ ).'includes/admin-bar-no-more.php';
-include_once plugin_dir_path( __FILE__ ).'includes/content-rss-feeds.php';
-include_once plugin_dir_path( __FILE__ ).'includes/content-archives-pages.php';
-include_once plugin_dir_path( __FILE__ ).'includes/site-security-and-spam.php';
-include_once plugin_dir_path( __FILE__ ).'includes/site-login-interface.php';
+include_once plugin_dir_path( __FILE__ ).'modules/wordpress-config.php';
+include_once plugin_dir_path( __FILE__ ).'modules/head-clean-up.php';
+include_once plugin_dir_path( __FILE__ ).'modules/site-support.php';
+include_once plugin_dir_path( __FILE__ ).'modules/admin-bar-no-more.php';
+include_once plugin_dir_path( __FILE__ ).'modules/content-rss-feeds.php';
+include_once plugin_dir_path( __FILE__ ).'modules/content-archives-pages.php';
+include_once plugin_dir_path( __FILE__ ).'modules/site-security-and-spam.php';
+include_once plugin_dir_path( __FILE__ ).'modules/site-login-interface.php';
 
 if ( is_admin() ) {
-    include_once( plugin_dir_path( __FILE__ ) . 'includes/dashboard-clean-up.php' );
-    include_once plugin_dir_path( __FILE__ ).'includes/admin-interface.php';
-    include_once plugin_dir_path( __FILE__ ).'includes/admin-mail-no-more.php';
-    include_once plugin_dir_path( __FILE__ ).'includes/content-medias.php';
+    include_once( plugin_dir_path( __FILE__ ) . 'modules/dashboard-clean-up.php' );
+    include_once plugin_dir_path( __FILE__ ).'modules/admin-interface.php';
+    include_once plugin_dir_path( __FILE__ ).'modules/admin-mail-no-more.php';
+    include_once plugin_dir_path( __FILE__ ).'modules/content-medias.php';
 }
