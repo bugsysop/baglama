@@ -10,12 +10,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
-// Move to interface config ?
-add_filter('admin_footer_text', 'slate_admin_footer_text_output');
-function slate_admin_footer_text_output($text) {
-	$text = 'Wordpress réduit à l’os !.';
-  return $text;
-}
+
 
 // User Color Sheme
 function slate_get_user_admin_color(){
