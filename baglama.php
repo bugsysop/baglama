@@ -32,12 +32,12 @@ function baglama_slate_colors() {
 }
 
 
-// Engine
+// Backoffice
 
 if ( is_admin() ) {
-    include_once plugin_dir_path( __FILE__ ).'admin/slate-functions.php';
-    include_once plugin_dir_path( __FILE__ ).'admin/plugins-menu.php';
-    //include_once plugin_dir_path( __FILE__ ).'admin/widgets.php';
+    include_once plugin_dir_path( __FILE__ ).'backoffice/slate-functions.php';
+    include_once plugin_dir_path( __FILE__ ).'backoffice/plugins-menu.php';
+    //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
 }
 
 // Modules
