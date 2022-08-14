@@ -11,26 +11,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Version: 2022.08.14
 */
 
-// Slate Admin Theme - 1.2.4
-
-add_action( 'admin_enqueue_scripts', 'baglama_slate_files' );
-//add_action( 'login_enqueue_scripts', 'baglama_slate_files' );
-function baglama_slate_files() {
-  wp_enqueue_style( 'slate-admin-theme', plugins_url('assets/css/slate.css', __FILE__), array(), '1.2.4' );
-  wp_enqueue_script( 'slate', plugins_url( "assets/js/slate.js", __FILE__ ), array( 'jquery' ), '1.2.4' );
-}
-
-add_action( 'after_setup_theme', 'baglama_slate_add_editor_styles' );
-function baglama_slate_add_editor_styles() {
-    add_editor_style( plugins_url('css/editor-style.css', __FILE__ ) );
-}
-
-add_action( 'admin_head', 'baglama_slate_colors' );
-//add_action( 'login_head', 'baglama_slate_colors' );
-function baglama_slate_colors() {
-	include( 'assets/css/dynamic.php' );
-}
-
 // Engine
 
 include_once plugin_dir_path( __FILE__ ).'engine/wordpress-config.php';
@@ -47,9 +27,26 @@ include_once plugin_dir_path( __FILE__ ).'engine/site-security-and-spam.php';
 if ( is_admin() ) {
     include_once plugin_dir_path( __FILE__ ).'backoffice/slate-functions.php';
     include_once plugin_dir_path( __FILE__ ).'backoffice/plugins-menu.php';
-    include_once( plugin_dir_path( __FILE__ ).'backoffice/dashboard-clean-up.php' );
-    include_once plugin_dir_path( __FILE__ ).'backoffice/admin-interface.php';
+    include_once( plugin_dir_path( __FILE__ ).'backoffice/dashboard-widgets-tweaks.php' );
+    include_once plugin_dir_path( __FILE__ ).'backoffice/admin-ui-tweaks.php';
     //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
+}
+
+// Slate Admin Theme - 1.2.4
+add_action( 'admin_enqueue_scripts', 'baglama_slate_files' );
+//add_action( 'login_enqueue_scripts', 'baglama_slate_files' );
+function baglama_slate_files() {
+    wp_enqueue_style( 'slate-admin-theme', plugins_url('assets/css/slate.css', __FILE__), array(), '1.2.4' );
+    wp_enqueue_script( 'slate', plugins_url( "assets/js/slate.js", __FILE__ ), array( 'jquery' ), '1.2.4' );
+}
+add_action( 'after_setup_theme', 'baglama_slate_add_editor_styles' );
+function baglama_slate_add_editor_styles() {
+    add_editor_style( plugins_url('css/editor-style.css', __FILE__ ) );
+}
+add_action( 'admin_head', 'baglama_slate_colors' );
+//add_action( 'login_head', 'baglama_slate_colors' );
+function baglama_slate_colors() {
+	include( 'assets/css/dynamic.php' );
 }
 
 // Modules
