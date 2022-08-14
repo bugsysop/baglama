@@ -8,7 +8,7 @@ Author: aris~
 Author URI: https://papatheodorou.net/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-Version: 2022.08.13
+Version: 2022.08.14
 */
 
 // Slate Admin Theme - 1.2.4
