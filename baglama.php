@@ -31,29 +31,32 @@ function baglama_slate_colors() {
 	include( 'assets/css/dynamic.php' );
 }
 
+// Engine
+
+include_once plugin_dir_path( __FILE__ ).'engine/wordpress-config.php';
+include_once plugin_dir_path( __FILE__ ).'engine/site-support.php';
+if ( is_admin() ) {
+    include_once plugin_dir_path( __FILE__ ).'engine/admin-mail-no-more.php';
+    include_once plugin_dir_path( __FILE__ ).'engine/content-medias.php';
+}
+include_once plugin_dir_path( __FILE__ ).'engine/head-clean-up.php';
+include_once plugin_dir_path( __FILE__ ).'engine/site-security-and-spam.php';
 
 // Backoffice
 
 if ( is_admin() ) {
     include_once plugin_dir_path( __FILE__ ).'backoffice/slate-functions.php';
     include_once plugin_dir_path( __FILE__ ).'backoffice/plugins-menu.php';
+    include_once( plugin_dir_path( __FILE__ ).'backoffice/dashboard-clean-up.php' );
+    include_once plugin_dir_path( __FILE__ ).'backoffice/admin-interface.php';
     //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
 }
 
 // Modules
 
-include_once plugin_dir_path( __FILE__ ).'modules/wordpress-config.php';
-include_once plugin_dir_path( __FILE__ ).'modules/head-clean-up.php';
-include_once plugin_dir_path( __FILE__ ).'modules/site-support.php';
 include_once plugin_dir_path( __FILE__ ).'modules/admin-bar-no-more.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-rss-feeds.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-archives-pages.php';
-include_once plugin_dir_path( __FILE__ ).'modules/site-security-and-spam.php';
 include_once plugin_dir_path( __FILE__ ).'modules/site-login-interface.php';
 
-if ( is_admin() ) {
-    include_once( plugin_dir_path( __FILE__ ) . 'modules/dashboard-clean-up.php' );
-    include_once plugin_dir_path( __FILE__ ).'modules/admin-interface.php';
-    include_once plugin_dir_path( __FILE__ ).'modules/admin-mail-no-more.php';
-    include_once plugin_dir_path( __FILE__ ).'modules/content-medias.php';
-}
+
