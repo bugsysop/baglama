@@ -26,7 +26,7 @@ include_once plugin_dir_path( __FILE__ ).'engine/site-security-and-spam.php';
 
 if ( is_admin() ) {
     include_once plugin_dir_path( __FILE__ ).'backoffice/slate-functions.php';
-    include_once plugin_dir_path( __FILE__ ).'backoffice/plugins-menu.php';
+    include_once plugin_dir_path( __FILE__ ).'backoffice/admin-menu.php';
     include_once( plugin_dir_path( __FILE__ ).'backoffice/dashboard-widgets-tweaks.php' );
     include_once plugin_dir_path( __FILE__ ).'backoffice/admin-ui-tweaks.php';
     //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
