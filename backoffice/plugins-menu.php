@@ -14,14 +14,14 @@
  *
  */
 
-add_action( 'admin_init', 'baglama_remove_menu_pages' );
+add_action( 'admin_menu', 'baglama_remove_menu_pages', 999 );
 function baglama_remove_menu_pages() {
     remove_menu_page( 'twentig' );
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 
-add_action( 'admin_init', 'baglama_add_menu_pages' );
+add_action( 'admin_menu', 'baglama_add_menu_pages' );
 function baglama_add_menu_pages() {
     add_submenu_page('themes.php','Twentig Page', 'Twentig','manage_options', 'twentig' );
 }
