@@ -6,11 +6,11 @@ Plugin URI: https://codeberg.org/_aris/baglama
 Description: Dispositif de publication expérimental basé sur WordPress
 Author: aris~
 Author URI: https://papatheodorou.net/
-GitHub Plugin URI: https://codeberg.org/_aris/baglama
+Gitea Plugin URI: https://codeberg.org/_aris/baglama
 Primary Branch: main
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-Version: 0.1
+Version: 0.1.1
 */
 
 // Engine
