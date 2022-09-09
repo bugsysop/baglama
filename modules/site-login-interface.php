@@ -1,7 +1,7 @@
 <?php
-// Voir : https://css-tricks.com/snippets/wordpress/customize-login-page/
-// https://www.wpbeginner.com/plugins/how-to-create-custom-login-page-for-wordpress/
-// https://wpmudev.com/blog/customize-login-page/
+// @link https://css-tricks.com/snippets/wordpress/customize-login-page/
+// @link https://www.wpbeginner.com/plugins/how-to-create-custom-login-page-for-wordpress/
+// @link https://wpmudev.com/blog/customize-login-page/
 
 // Custom style for login page only
 add_action('login_head', 'baglama_custom_style');
@@ -27,8 +27,4 @@ function baglama_change_login_logo_title() {
 add_filter('login_headertitle', 'baglama_change_login_logo_title');
 
 // Remove login page language switcher
-
 add_filter( 'login_display_language_dropdown', '__return_false' );
-
-
-
