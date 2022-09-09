@@ -36,7 +36,6 @@ if ( is_admin() ) {
 
 // Slate Admin Theme - 1.2.4
 add_action( 'admin_enqueue_scripts', 'baglama_slate_files' );
-//add_action( 'login_enqueue_scripts', 'baglama_slate_files' );
 function baglama_slate_files() {
     wp_enqueue_style( 'slate-admin-theme', plugins_url('assets/css/slate.css', __FILE__), array(), '1.2.4' );
     wp_enqueue_script( 'slate', plugins_url( "assets/js/slate.js", __FILE__ ), array( 'jquery' ), '1.2.4' );
@@ -46,7 +45,6 @@ function baglama_slate_add_editor_styles() {
     add_editor_style( plugins_url('css/editor-style.css', __FILE__ ) );
 }
 add_action( 'admin_head', 'baglama_slate_colors' );
-//add_action( 'login_head', 'baglama_slate_colors' );
 function baglama_slate_colors() {
 	include( 'assets/css/dynamic.php' );
 }
@@ -57,5 +55,3 @@ include_once plugin_dir_path( __FILE__ ).'modules/admin-bar-no-more.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-rss-feeds.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-archives-pages.php';
 include_once plugin_dir_path( __FILE__ ).'modules/site-login-interface.php';
-
-
