@@ -1,9 +1,10 @@
 <?php
-add_filter('the_generator', 'baglama_remove_version');
-function baglama_remove_version() {return '';}
+remove_action( 'wp_head', 'wp_generator' );
+add_filter( 'the_generator', '__return_null' );
 add_filter('style_loader_src', 'baglama_remove_version_scripts_styles', 9999);
 add_filter('script_loader_src', 'baglama_remove_version_scripts_styles', 9999);
 function baglama_remove_version_scripts_styles($src){if(strpos($src,'ver=')){$src=remove_query_arg('ver',$src);}return $src;}
+// @link https://shortpixel.com/blog/cleaning-the-wordpress-head-and-improving-performance/
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
