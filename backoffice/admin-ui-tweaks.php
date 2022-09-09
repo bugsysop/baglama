@@ -15,7 +15,7 @@ function baglama_remove_wp_logo_admin() {
 // function baglama_admin_footer_text() { echo 'The kids are united: Wordpress & Bağlama Rule'; }
 add_filter('admin_footer_text', 'baglama_admin_footer_text');
 function baglama_admin_footer_text($text) {
-	$text = 'The kids are united: Wordpress & Bağlama Rule';
+	$text = 'The kids are united: Wordpress & Bağlama Rule&nbsp;';
   return $text;
 }
 
