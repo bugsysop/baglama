@@ -12,6 +12,7 @@
  */
 
 // User Color Sheme
+// No baglama prefix -> See assets/css/dynamic.php -> To fix
 function slate_get_user_admin_color(){
 	$user_id = get_current_user_id();
 	$user_info = get_userdata($user_id);
