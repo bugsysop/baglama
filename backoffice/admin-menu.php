@@ -6,11 +6,11 @@
  * add_submenu_page('options-general.php','Page Title', 'Menu Label','manage_options', 'plugin_menu_slug' );
  *
  * References
- * https://developer.wordpress.org/reference/functions/remove_menu_page/
- * https://developer.wordpress.org/reference/functions/remove_submenu_page/
- * https://developer.wordpress.org/reference/functions/add_menu_page/
- * https://developer.wordpress.org/reference/functions/add_submenu_page/
- * https://wordpress.stackexchange.com/questions/306447/move-plugin-settings-to-settings-menu-in-the-admin
+ * @link https://developer.wordpress.org/reference/functions/remove_menu_page/
+ * @link https://developer.wordpress.org/reference/functions/remove_submenu_page/
+ * @link https://developer.wordpress.org/reference/functions/add_menu_page/
+ * @link https://developer.wordpress.org/reference/functions/add_submenu_page/
+ * @link https://wordpress.stackexchange.com/questions/306447/move-plugin-settings-to-settings-menu-in-the-admin
  *
  */
 
