@@ -7,22 +7,17 @@ Un dispositif de publication expérimental développé pour le site [Rébétiko]
 De façon très résumée :
 
 - Une interface utilisateur du _backoffice_ élégante et simplifiée.
-- Configuration avancée de WordPress à partir de _hooks_ et fonctions natives.
+- La configuration avancée de WordPress à partir de _hooks_ et fonctions natives.
 - Des fonctionalités de WordPress non utilisées et/ou non pertinentes désactivées.
 - Une réduction du nombre de plugins nécessaires à installer.
 
-### Plugins
-
-Sélections de plugins utiles en complément de Bağlama :
-
-- [Twentig - Toolkit for themes](https://wordpress.org/plugins/twentig/)
-- [Find My Blocks](https://wordpress.org/plugins/find-my-blocks/)
-- [Disable Gutenberg Blocks – Block Manager](https://wordpress.org/plugins/disable-gutenberg-blocks/)
+Plus d'informations à venir sur les pages du [Wiki](https://codeberg.org/_aris/baglama/wiki).
 
 ### Crédits
 
 Liste de personnes dont du code est ré/utilisé :
 
+- [Documentation officielle de WordPress](https://developer.wordpress.org/)
 - [Ryan Sommers](https://sevenbold.com/)
 - [Jeff Starr](https://profiles.wordpress.org/specialk/)
 - [Hardweb.it](https://wordpress.org/plugins/disable-media-permalink-by-hardweb-it/)
