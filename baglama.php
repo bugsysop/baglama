@@ -10,7 +10,7 @@ Gitea Plugin URI: https://codeberg.org/_aris/baglama
 Primary Branch: main
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-Version: 0.1.2
+Version: 0.1.3
 */
 
 // Engine
