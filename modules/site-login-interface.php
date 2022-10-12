@@ -21,10 +21,10 @@ function baglama_login_logo_link() {
 }
 
 // Change the logo Title attribute
-add_filter('login_headertitle', 'baglama_change_login_logo_title');
 function baglama_change_login_logo_title() {
 	return get_option('blogname');
 }
+add_filter('login_headertext', 'baglama_change_login_logo_title');
 
 // Remove login page language switcher
 add_filter( 'login_display_language_dropdown', '__return_false' );
