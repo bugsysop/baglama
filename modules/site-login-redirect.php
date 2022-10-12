@@ -1,16 +1,22 @@
 <?php
-/*
- * NOT ACTIVE - NOT TESTED
- *
+/**
+ * Redirect user after successful login.
+ * - Subscribers to home page
+ * - Admin and other contibutors to Dashboard
+ * NOT ACTIVE - Tested an running fine
  */
-
-// After login redinect non-admin users to home
-add_filter( 'login_redirect', 'baglama_login_redirect', 10, 3 );
-function baglama_login_redirect( $redirect_to, $request, $user ) {
-	$baglama_roles = isset( $user->roles );
-	if ( is_array( $baglama_roles ) && in_array( 'administrator', $baglama_roles ) ) {
-		return admin_url();
+function baglama_redirect( $redirect_to, $request, $user ) {
+	//is there a user to check?
+	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+		//check for subscribers
+		if ( in_array( 'subscriber', $user->roles ) ) {
+			// redirect them to the default place
+			return home_url();
+		} else {
+			return $redirect_to;
+		}
 	} else {
-		return site_url();
+		return $redirect_to;
 	}
 }
+add_filter( 'login_redirect', 'baglama_redirect', 10, 3 );
