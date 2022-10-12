@@ -1,9 +1,9 @@
 <?php
-/**
- * Redirect user after successful login.
+/*
+ * Redirect user after successful login
  * - Subscribers to home page
  * - Admin and other contibutors to Dashboard
- * NOT ACTIVE - Tested an running fine
+ * NOT ACTIVE - Running fine
  */
 function baglama_redirect( $redirect_to, $request, $user ) {
 	//is there a user to check?
