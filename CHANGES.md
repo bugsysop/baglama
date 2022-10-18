@@ -5,6 +5,7 @@ Functionalities
 * Add `Bye bye JQuery`(for frontend) 
 * Remove useless option from user profile
 * Remove the color picker from profile admin page
+* Disable Pingbacks
 
 Enhancements
 * Add a changelog: `CHANGES.md` (git-updater)
