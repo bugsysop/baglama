@@ -2,6 +2,13 @@
 add_filter('xmlrpc_enabled', '__return_false'); // Warning -> WP desktop Apps will not work
 add_filter('wp_is_application_passwords_available', '__return_false');  // Warning -> WP Mobiles Apps will not work
 
+// No Pingback
+add_filter ( 'pings_open', '__return_false', 9999 );
+add_filter ( 'wp_headers', function ($headers) {
+	unset ( $headers ['X-Pingback'], $headers ['x-pingback'] );
+	return $headers;
+} );
+
 // No self ping
 add_action('pre_ping','baglama_no_self_ping');
 function baglama_no_self_ping(&$links){$home=get_option('home');foreach($links as $l=>$link)if(0===strpos($link,$home))unset($links[$l]);}
