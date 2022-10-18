@@ -31,6 +31,7 @@ if ( is_admin() ) {
     include_once plugin_dir_path( __FILE__ ).'backoffice/admin-menu.php';
     include_once( plugin_dir_path( __FILE__ ).'backoffice/dashboard-widgets-tweaks.php' );
     include_once plugin_dir_path( __FILE__ ).'backoffice/admin-ui-tweaks.php';
+    include_once plugin_dir_path( __FILE__ ).'backoffice/user-profile-tweaks.php';
     //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
 }
 
