@@ -1,8 +1,10 @@
 #### [unreleased]
 
 * Hide WordPress update nag to all but admins
-* Hide Wordpress PHP version nag
+* Hide Wordpress PHP version upgrade nag
 * Hide invasive plugins nags
+* Disable administration email verification prompt
+* Howdy? No more in `admin bar`
 
 #### 0.1.5
 
