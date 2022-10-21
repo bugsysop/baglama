@@ -2,6 +2,7 @@
 
 * Hide WordPress update nag to all but admins
 * Hide Wordpress PHP version nag
+* Hide invasive plugins nags
 
 #### 0.1.5
 
