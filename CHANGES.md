@@ -2,6 +2,10 @@
 
 Nothing !
 
+#### 0.1.5
+
+Correcting the crash of version 0.1.4: parse error: two `<?php` tags in `engine/wordpress-config.php` file (see f0268f9b). Crappy code, sorry!
+
 #### 0.1.4
 Functionalities
 * Redirect single user after successful login
