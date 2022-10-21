@@ -6,4 +6,5 @@ remove_action('after_password_reset', 'wp_password_change_notification');
 add_filter('auto_plugin_update_send_email', '__return_false');
 // Auto-update notifications for themes.
 add_filter('auto_theme_update_send_email', '__return_false');
-
+// Disable Administration Email Verification Prompt
+add_filter( 'admin_email_check_interval', '__return_false' );
