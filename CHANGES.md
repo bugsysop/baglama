@@ -28,7 +28,6 @@ _Test release for git-updater pluggin, no real changes_
 
 Enhancements
 * Add `git` support for updates
-* Deprecated PHP code in login page (#4)
 
 #### Initial commit
 
