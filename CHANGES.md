@@ -1,11 +1,11 @@
 #### [unreleased]
 
+#### 0.1.4
 Functionalities
 * Redirect single user after successful login
 * Add `Bye bye JQuery`(for frontend) 
-* Remove useless option from user profile
+* Remove useless options from user profile
 * Remove the color picker from profile admin page
-* Disable Pingbacks
 
 Enhancements
 * Add a changelog: `CHANGES.md` (git-updater)
@@ -13,7 +13,7 @@ Enhancements
 Bugs and problems
 * Correct deprecated code for login page logo (#4)
 
-#### 1.3
+#### 0.1.3
 
 Functionalities
 * Removing the "capital P dangit" function (suck)
@@ -23,7 +23,7 @@ Functionalities
 Bugs and problems
 * Remove `generator` in head (was incomplete)
 
-#### 1.2
+#### 0.1.2
 _Test release for git-updater pluggin, no real changes_
 
 Enhancements
