@@ -6,3 +6,8 @@ function baglama_hide_update_nag() {
         remove_action( 'admin_notices', 'update_nag', 3 );
     }
 }
+// Hide Wordpress PHP version nag
+add_action( 'wp_dashboard_setup', 'baglama_remove_stupid_php_nag' );
+function baglama_remove_stupid_php_nag() {
+	remove_meta_box( 'dashboard_php_nag', 'dashboard', 'normal' );
+}
