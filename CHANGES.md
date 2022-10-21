@@ -1,6 +1,7 @@
 #### [unreleased]
 
 * Hide WordPress update nag to all but admins
+* Hide Wordpress PHP version nag
 
 #### 0.1.5
 
