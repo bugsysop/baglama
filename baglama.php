@@ -11,6 +11,8 @@ Primary Branch: main
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 Version: 0.1.5
+Requires at least: 6.0
+Requires PHP:      7.2
 */
 
 // Engine
