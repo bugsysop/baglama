@@ -11,6 +11,7 @@ Enhancements
 * Add a changelog: `CHANGES.md` (git-updater)
 
 Bugs and problems
+* Remove generator in head (was incomplete)
 * Correct deprecated code for login page logo (#4)
 
 #### 0.1.3
