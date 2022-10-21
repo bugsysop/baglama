@@ -1,6 +1,6 @@
 #### [unreleased]
 
-Nothing !
+* Hide WordPress update nag to all but admins
 
 #### 0.1.5
 
