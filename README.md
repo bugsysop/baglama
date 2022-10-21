@@ -10,7 +10,6 @@ De façon très résumée :
 - La configuration avancée de WordPress à partir de _hooks_ et fonctions natives.
 - Des fonctionalités de WordPress non utilisées et/ou non pertinentes désactivées.
 - Une réduction du nombre de plugins nécessaires à installer.
-- Disable administration email verification prompt
 
 Plus d'informations à venir sur les pages du [Wiki](https://codeberg.org/_aris/baglama/wiki).
 
