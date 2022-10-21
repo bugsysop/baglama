@@ -11,3 +11,12 @@ add_action( 'wp_dashboard_setup', 'baglama_remove_stupid_php_nag' );
 function baglama_remove_stupid_php_nag() {
 	remove_meta_box( 'dashboard_php_nag', 'dashboard', 'normal' );
 }
+
+// Hide invasive plugins nags
+// Target: Code Snippets
+add_action('admin_head', 'baglama_hide_plugins_nags');
+function baglama_hide_plugins_nags() {
+  echo '<style>
+    .code-snippets-pro-notice { display: none; } 
+  </style>';
+}
