@@ -5,6 +5,7 @@
 * Hide invasive plugins nags
 * Disable administration email verification prompt
 * Howdy? No more in `admin bar`
+* Remove ajacent post prefetching
 
 #### 0.1.5
 
