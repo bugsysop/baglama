@@ -6,6 +6,7 @@
 * Disable administration email verification prompt
 * Howdy? No more in `admin bar`
 * Remove ajacent post prefetching
+* Add photo credit info to images
 
 #### 0.1.5
 
