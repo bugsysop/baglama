@@ -57,6 +57,7 @@ function baglama_slate_colors() {
 // Modules
 
 include_once plugin_dir_path( __FILE__ ).'modules/admin-bar-no-more.php';
+include_once plugin_dir_path( __FILE__ ).'modules/content-image-credit.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-rss-feeds.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-archives-pages.php';
 include_once plugin_dir_path( __FILE__ ).'modules/site-login-interface.php';
