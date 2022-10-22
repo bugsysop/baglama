@@ -17,7 +17,6 @@ Functionalities
 * Add `Bye bye JQuery`(for frontend) 
 * Remove useless options from user profile
 * Remove the color picker from profile admin page
-* Remove useless option from user profile
 * Redirect user after successful login  
 
 Enhancements
