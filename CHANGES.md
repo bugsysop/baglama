@@ -8,6 +8,7 @@
 * Remove ajacent post prefetching
 * Add photo credit info to images
 * Remove comments support and interface
+* Add a ID column for posts and pages
 
 #### 0.1.5
 
