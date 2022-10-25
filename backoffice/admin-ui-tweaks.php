@@ -21,6 +21,33 @@ function baglama_remove_howdy ( $wp_admin_bar ) {
 	] );
 }
 
+/*
+ * Add a ID column for posts and pages
+ * Note: to add the column for a custom post type
+ * add_filter( 'manage_posts_columns', 'baglama_my_cpt_name', 5 );
+ * add_action( 'manage_posts_custom_column', 'baglama_my_cpt_name', 5, 2 );
+ */
+if ( ! function_exists( 'baglama_add_id_column' ) ) :
+	function baglama_add_id_column( $columns ) {
+		$columns['post_id_clmn'] = __( 'ID', 'baglama-add-id-column' );
+		return $columns;
+	}
+	add_filter( 'manage_posts_columns', 'baglama_add_id_column', 5 ); // for posts
+	add_filter( 'manage_pages_columns', 'baglama_add_id_column', 5 ); // for pages
+endif;
+
+// Print with an action hook
+if ( ! function_exists( 'baglama_column_content' ) ) :
+	function baglama_column_content( $column, $id ) {
+		if ( $column === 'post_id_clmn' ) {
+			esc_html_e( $id );
+		}
+	}
+	add_action( 'manage_posts_custom_column', 'baglama_column_content', 5, 2 ); // for posts
+	add_action( 'manage_pages_custom_column', 'baglama_column_content', 5, 2 ); // for pages
+endif;
+
+
 // Admin footer
 // add_filter('admin_footer_text', 'baglama_admin_footer_text');
 // function baglama_admin_footer_text() { echo 'The kids are united: Wordpress & Bağlama Rule'; }
