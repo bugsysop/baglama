@@ -18,7 +18,7 @@ add_action( 'admin_head', function(){
 
 /*
  * Remove the color picker from the user profile admin
- * Note: compatibility only with WP 6.0 ans later
+ * Note: compatibility only with WP 6.0 and later
  * https://wordpress.org/support/topic/remove-color-picker-from-profile-edit-screen-in-wp-6-0/
  */
 add_action( 'admin_head-profile.php', 'baglama_remove_admin_color_scheme_picker' );
