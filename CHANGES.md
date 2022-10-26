@@ -1,15 +1,22 @@
 #### [unreleased]
 
+Nothing yet
+
+#### 0.1.6
+
+Functionalities
 * Hide WordPress update nag to all but admins
-* Hide Wordpress PHP version upgrade nag
-* Hide invasive plugins nags
+* Hide Wordpress `PHP version` upgrade nag
+* Hide some invasive plugins nags
 * Disable administration email verification prompt
 * Howdy? No more in `admin bar`
-* Remove ajacent post prefetching
+* Remove ajacent post prefetching (head)
 * Add photo credit info to images
-* Remove comments support and interface
+* Remove comments support and interface (inactive by default)
 * Add a ID column for posts and pages
-* Reusable Blocks: now in `submenu` under Apparence
+* Reusable Blocks: now in `submenu` under `Apparence`
+
+Bugs and problems
 * Remove access to themes and plugins files Edit for WP 6.1 
 
 #### 0.1.5
