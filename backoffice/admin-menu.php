@@ -8,26 +8,25 @@ add_filter( 'custom_menu_order', 'baglama_reorder_admin_menu' );
 add_filter( 'menu_order', 'baglama_reorder_admin_menu' );
 function baglama_reorder_admin_menu( $__return_true ) {
     return array(
-        'index.php',                   // Dashboard
-        'separator1',                  // --Space--
-        'edit.php', 					// Posts
-        'edit.php?post_type=page', 	    // Pages
-        'upload.php', 					// Media
-        'edit-comments.php', 			// Comments
-        'separator2', 					// --Space--
-        'themes.php', 					// Appearance
-        'plugins.php', 				    // Plugins
-        'tools.php', 					// Tools
-        'users.php', 					// Users     
-        'options-general.php', 		    // Settings
-        'separator-last', 				// --Space-- Last separator
+        'index.php',                    // Dashboard
+        'separator1',                   // --Space--
+        'edit.php',                     // Posts
+        'edit.php?post_type=page',      // Pages
+        'upload.php',                   // Media
+        'edit-comments.php',            // Comments
+        'separator2',                   // --Space--
+        'themes.php',                   // Appearance
+        'plugins.php',                  // Plugins
+        'tools.php',                    // Tools
+        'users.php',                    // Users     
+        'options-general.php',          // Settings
+        'separator-last',               // --Space-- Last separator
    );
 }
 
 add_action( 'admin_menu', 'baglama_move_to_submenu' );
 function baglama_move_to_submenu() {
-    // Reusable Blocks: remove menu & create submenu under Apparence
-    remove_menu_page( 'edit.php?post_type=wp_block' );
+    // Reusable Blocks: create submenu under Apparence
     add_submenu_page('themes.php',__('Reusable Blocks'), __('Reusable Blocks'),'manage_options', 'edit.php?post_type=wp_block' );
 }
 
@@ -40,6 +39,8 @@ function baglama_remove_menu_pages() {
     // For WordPress 6.1-RC3
     remove_submenu_page( 'tools.php', 'theme-editor.php' );
     remove_submenu_page( 'tools.php', 'plugin-editor.php' );
+    // For All
+    remove_menu_page( 'edit.php?post_type=wp_block' );
 }
 
 // Plugins humility
