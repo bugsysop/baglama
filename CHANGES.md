@@ -10,6 +10,7 @@
 * Remove comments support and interface
 * Add a ID column for posts and pages
 * Reusable Blocks: now in `submenu` under Apparence
+* Remove access to themes and plugins files Edit for WP 6.1 
 
 #### 0.1.5
 
