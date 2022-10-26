@@ -6,8 +6,8 @@
 // Global
 function baglama_reorder_admin_menu( $__return_true ) {
     return array(
-         'index.php', 					// Dashboard
-		 'separator1', 					// --Space--
+         'index.php',                   // Dashboard
+		 'separator1',                  // --Space--
          'edit.php', 					// Posts
 		 'edit.php?post_type=page', 	// Pages
          'upload.php', 					// Media
@@ -26,7 +26,14 @@ function baglama_reorder_admin_menu( $__return_true ) {
 add_filter( 'custom_menu_order', 'baglama_reorder_admin_menu' );
 add_filter( 'menu_order', 'baglama_reorder_admin_menu' );
 
-// Themes en plugins files Edit
+add_action( 'admin_menu', 'baglama_move_to_submenu' );
+function baglama_move_to_submenu() {
+    // Reusable Blocks: remove menu & create submenu under Apparence
+    remove_menu_page( 'edit.php?post_type=wp_block' );
+    add_submenu_page('themes.php',__('Reusable Blocks'), __('Reusable Blocks'),'manage_options', 'edit.php?post_type=wp_block' );
+}
+
+// Themes and plugins files Edit
 add_action( 'admin_menu', 'baglama_remove_menu_pages', 999 );
 function baglama_remove_menu_pages() {
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
