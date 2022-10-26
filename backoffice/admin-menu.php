@@ -36,8 +36,12 @@ function baglama_move_to_submenu() {
 // Themes and plugins files Edit
 add_action( 'admin_menu', 'baglama_remove_menu_pages', 999 );
 function baglama_remove_menu_pages() {
+    // For WordPress 6.0.*
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+    // For WordPress 6.1-RC3
+    remove_submenu_page( 'tools.php', 'theme-editor.php' );
+    remove_submenu_page( 'tools.php', 'plugin-editor.php' );
 }
 
 // Plugins humility
