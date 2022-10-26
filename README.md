@@ -17,5 +17,5 @@ This plugin does not collect or store any user data. It does not set any cookies
 ### License
 
 [GNU General Public License v2 or later](/_aris/baglama/src/branch/main/LICENSE)   
-Official version on the [GNU Project](http://www.gnu.org/licenses/gpl-2.0.html) Web site.   
+Official version of the GNU/GPL on the [GNU Project](http://www.gnu.org/licenses/gpl-2.0.html) Web site.   
 
