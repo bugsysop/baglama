@@ -1,6 +1,6 @@
 #### [unreleased]
 
-Nothing yet
+* Remove fat from custom admin CSS
 
 #### 0.1.6
 
