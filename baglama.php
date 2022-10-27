@@ -49,10 +49,6 @@ add_action( 'after_setup_theme', 'baglama_slate_add_editor_styles' );
 function baglama_slate_add_editor_styles() {
     add_editor_style( plugins_url('css/editor-style.css', __FILE__ ) );
 }
-add_action( 'admin_head', 'baglama_slate_colors' );
-function baglama_slate_colors() {
-	include( 'assets/css/dynamic.php' );
-}
 
 // Modules
 
