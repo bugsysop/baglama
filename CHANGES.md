@@ -1,6 +1,7 @@
 #### [unreleased]
 
 * Remove fat from custom admin CSS
+* Better user interface and default color scheme
 
 #### 0.1.6
 
