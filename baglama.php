@@ -39,10 +39,10 @@ if ( is_admin() ) {
     //include_once plugin_dir_path( __FILE__ ).'backoffice/widgets.php';
 }
 
-// Slate Admin Theme - 1.2.4
-add_action( 'admin_enqueue_scripts', 'baglama_slate_files' );
-function baglama_slate_files() {
-    wp_enqueue_style( 'slate-admin-theme', plugins_url('assets/css/slate.css', __FILE__), array(), '1.2.4' );
+// Customization based on Slate Admin Theme - 1.2.4
+add_action( 'admin_enqueue_scripts', 'baglama_admin_files' );
+function baglama_admin_files() {
+    wp_enqueue_style( 'baglama-admin-theme', plugins_url('assets/css/admin.css', __FILE__), array(), '1.2.4' );
     wp_enqueue_script( 'slate', plugins_url( "assets/js/slate.js", __FILE__ ), array( 'jquery' ), '1.2.4' );
 }
 add_action( 'after_setup_theme', 'baglama_slate_add_editor_styles' );
