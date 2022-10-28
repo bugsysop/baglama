@@ -24,6 +24,12 @@ function baglama_reorder_admin_menu( $__return_true ) {
    );
 }
 
+add_action( 'admin_menu', 'baglama_add_submenus' );
+function baglama_add_submenus() {
+    // WP pages: About, Credits, Freedom, Privacy, etc
+    add_submenu_page( 'index.php', '', 'About',	'read', 'about.php');
+}
+
 add_action( 'admin_menu', 'baglama_move_to_submenu' );
 function baglama_move_to_submenu() {
     // Reusable Blocks: create submenu under Apparence
