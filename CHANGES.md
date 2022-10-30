@@ -3,6 +3,10 @@
 * Remove fat from custom admin CSS
 * Better user interface and default color scheme
 * WP pages (About, Credits, Freedom, Privacy) under `Dashboard` main menu
+* Extend the sanitize files name function
+
+Bugs and problems
+* Fix non working sanitize files name function
 
 #### 0.1.6
 
