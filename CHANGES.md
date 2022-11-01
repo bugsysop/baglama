@@ -4,9 +4,11 @@
 * Better user interface and default color scheme
 * WP pages (About, Credits, Freedom, Privacy) under `Dashboard` main menu
 * Extend the sanitize files name function
+* Add access to Block Theme edition in `Admin Menu` (under `Apparence`)
 
 Bugs and problems
 * Fix non working sanitize files name function
+* Conditional code for `Admin Menu` tweaks
 
 #### 0.1.6
 
