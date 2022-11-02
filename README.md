@@ -14,7 +14,7 @@ More information to come in the [Wiki](https://codeberg.org/_aris/baglama/wiki) 
 
 - For WordPress, this plugin is developed and tested with versions 6.0.* and 6.1. Warning: _not working_ with previous versions!
 - For PHP, this plugin is developped with version 7.3.* and 7.4.* and compatibility is tested from 7.0.* up to 7.4.* but at this time _not_ realy with PHP 8.*
-- Compatibility with plugins is still a _work in progress_
+- Compatibility with plugins is still a _work in progress_. For now we tested compatibility in deep: Git Updater, Block Manager, Find my Blocks!, Code Snippets, Simply Static, Plugin Dependencies, Twentig, Custom Post type UI, WordPress Beta Tester...
 
 ### Privacy
 
