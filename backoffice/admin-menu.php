@@ -4,30 +4,20 @@
  */
 
 // Global
-// Have to change this!
-add_filter( 'custom_menu_order', 'baglama_make_admin_menu' );
-add_filter( 'menu_order', 'baglama_make_admin_menu' );
-function baglama_reorder_admin_menu( $__return_true ) {
+add_filter( 'custom_menu_order', 'baglama_admin_menu_order' );
+add_filter( 'menu_order', 'baglama_admin_menu_order' );
+function baglama_admin_menu_order( $__return_true ) {
     return array(
-        'index.php',                    // Dashboard
-        'separator1',                   // --Space--
-        'edit.php',                     // Posts
-        'edit.php?post_type=page',      // Pages
-        'upload.php',                   // Media
-        'edit-comments.php',            // Comments
-        'separator2',                   // --Space--
-        'themes.php',                   // Appearance
-        'plugins.php',                  // Plugins
-        'tools.php',                    // Tools
-        'users.php',                    // Users     
-        'options-general.php',          // Settings
-        'separator-last',               // --Space-- Last separator
+        'index.php',                   	// Dashboard
+        'separator1',                 	// --Space--
+        'edit.php', 					// Posts
+        'edit.php?post_type=page', 	    // Pages
    );
 }
 
 // Remove
-add_action( 'admin_menu', 'baglama_remove_menu_pages', 999 );
-function baglama_remove_menu_pages() {
+add_action( 'admin_menu', 'baglama_admin_menu_remove', 999 );
+function baglama_admin_menu_remove() {
     // For WordPress 6.0.* & Classic Themes
     remove_submenu_page( 'themes.php', 'theme-editor.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
