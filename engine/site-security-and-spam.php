@@ -8,7 +8,7 @@ function baglama_no_self_ping(&$links){$home=get_option('home');foreach($links a
 
 // No error message on login page
 add_filter( 'login_errors', 'baglama_no_login_errors' );
-function baglama_no_login_errors(){ return __( 'Houston, nous avons un problème…', 'baglama' ); }
+function baglama_no_login_errors(){ return __( 'Houston, we have a problem…', 'baglama' ); }
 
 // No Pasword recovery
 // To remove the link, we have to use a dirty hack in css
@@ -25,7 +25,7 @@ function baglama_disable_lost_password() {
 // Disable WP Registration Page - 1.0.2
 add_filter( 'register', 'baglama_remove_registration_link' );
 function baglama_remove_registration_link( $registration_url ) {
-	return __( 'Ce site n’accepte pas l’enregistrement de comptes utilisateur', 'baglama' );
+	return __( 'This site does not accept registration of user accounts', 'baglama' );
 }
 add_action( 'init', 'baglama_redirect_registration_page' );
 function baglama_redirect_registration_page() {
