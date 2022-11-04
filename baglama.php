@@ -16,6 +16,11 @@ Tested up to: 6.1
 Requires PHP: 7.2
 */
 
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 // Engine
 
 include_once plugin_dir_path( __FILE__ ).'engine/wordpress-config.php';
