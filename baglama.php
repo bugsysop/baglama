@@ -5,6 +5,7 @@ Plugin Name: Bağlama
 Plugin URI: https://codeberg.org/_aris/baglama
 Description: Dispositif de publication expérimental basé sur WordPress
 Author: aris~
+Text Domain: baglama
 Author URI: https://papatheodorou.net/
 Gitea Plugin URI: https://codeberg.org/_aris/baglama
 Primary Branch: main
@@ -20,6 +21,9 @@ Requires PHP: 7.2
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+// Text domain
+load_plugin_textdomain( 'baglama', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 
 // Engine
 
