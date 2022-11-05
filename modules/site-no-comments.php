@@ -1,9 +1,7 @@
 <?php
 /*
  * Remove comments
- *
- * Not active by default
- * Note: Fully functional and tested
+ * Todo: make it an option
  */
 
 // Removes support for post & pages
@@ -16,8 +14,16 @@ function baglama_remove_comment_support() {
 // Admin menu
 add_action( 'admin_menu', 'baglama_remove_comments_admin_menus' );
 function baglama_remove_comments_admin_menus() {
+	
+	 // Error if setting page is requested > To Be Tested
+	 global $pagenow;
+
+		// if ( $pagenow == 'comment.php' || $pagenow == 'edit-comments.php' || $pagenow == 'options-discussion.php' )
+		if ( $pagenow == 'comment.php' || $pagenow == 'edit-comments.php' )
+			wp_die( __( 'Comments are closed.' ), '', array( 'response' => 403 ) );
+	
     remove_menu_page( 'edit-comments.php' );
-	remove_submenu_page('options-general.php', 'options-discussion.php');
+	remove_submenu_page('options-general.php', 'options-discussion.php'); // Avatars ?
 }
 
 // Admin bar
@@ -37,10 +43,17 @@ function baglama_remove_comments_dashboard() {
 // Gutenberg Edit Panel 
 add_action('admin_head', 'baglama_remove_comments_gutenberg');
 function baglama_remove_comments_gutenberg() {
- echo '<script>
- wp.domReady( () => {
-    const { removeEditorPanel } = wp.data.dispatch("core/edit-post");
-    removeEditorPanel( "discussion-panel" );
-  } );
-  </script>';
+    echo '<script>
+        wp.domReady( () => {
+        const { removeEditorPanel } = wp.data.dispatch("core/edit-post");
+        removeEditorPanel( "discussion-panel" );
+    } );
+    </script>';
 }
+
+// Clean Header
+function baglama_remove_comments_header(){
+    wp_deregister_script( 'comment-reply' );
+	remove_action( 'wp_head', 'feed_links_extra', 3 );
+}
+add_action('init','baglama_remove_comments_header');
