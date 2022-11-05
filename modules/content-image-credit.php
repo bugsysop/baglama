@@ -120,13 +120,13 @@ class Baglama_Image_Credits {
 	public static function baglama_add_media_credit( $fields, $post ) {
 		$credit_info = self::baglama_get_media_credit( $post->ID );
         $fields['media_credit'] = [
-        	'label' => __( 'Credit', 'baglama' ),
+        	'label' => __( 'Author', 'baglama' ),
         	'input' => 'text',
         	'value' => $credit_info['credit'],
         ];
 
         $fields['media_credit_url'] = [
-        	'label' => __( 'Credit URL', 'baglama' ),
+        	'label' => __( 'Link', 'baglama' ),
         	'input' => 'text',
         	'value' => $credit_info['credit_url'],
         ];
