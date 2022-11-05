@@ -66,3 +66,6 @@ include_once plugin_dir_path( __FILE__ ).'modules/content-image-credit.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-rss-feeds.php';
 include_once plugin_dir_path( __FILE__ ).'modules/content-archives-pages.php';
 include_once plugin_dir_path( __FILE__ ).'modules/site-login-interface.php';
+if ( is_admin() ) {
+include_once plugin_dir_path( __FILE__ ).'modules/site-no-comments.php';
+}
