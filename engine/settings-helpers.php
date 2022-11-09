@@ -1,3 +1,4 @@
+<?php
 // Check if option is Valid to string
 function baglama_check_valid_option($optionString, $validString = "")
 {
