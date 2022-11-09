@@ -1,0 +1,101 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bağlama\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-09 12:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-6.1\n"
+"X-Domain: baglama"
+
+#. Author of the plugin
+msgid "aris~"
+msgstr ""
+
+#: modules/content-image-credit.php:123
+msgid "Author"
+msgstr ""
+
+#. Field id
+#: engine/settings-page.php:77
+msgid "Authors"
+msgstr ""
+
+#. Name of the plugin
+msgid "Bağlama"
+msgstr ""
+
+#: baglama.php:113
+msgid "Codeberg"
+msgstr ""
+
+#. Field id
+#: engine/settings-page.php:61
+msgid "Comments"
+msgstr ""
+
+#: modules/content-image-credit.php:83
+msgid "Credit:"
+msgstr ""
+
+#: engine/settings-page.php:114
+msgid "Disable author’s archives page for public site."
+msgstr ""
+
+#: engine/settings-page.php:107
+msgid "Disable completely RSS/Atom Feeds for all post type."
+msgstr ""
+
+#. Description of the plugin
+msgid "Dispositif de publication expérimental basé sur WordPress"
+msgstr ""
+
+#. Field id
+#: engine/settings-page.php:69
+msgid "Feeds"
+msgstr ""
+
+#: engine/settings-page.php:32
+msgid ""
+"Follow the white rabbit. This is a skeleton for the Bağlama options page"
+msgstr ""
+
+#: engine/settings-page.php:100
+msgid "Globally disable comments (admin and public site)."
+msgstr ""
+
+#: engine/site-security-and-spam.php:11
+msgid "Houston, we have a problem…"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://codeberg.org/_aris/baglama"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://papatheodorou.net/"
+msgstr ""
+
+#: modules/content-image-credit.php:129
+msgid "Link"
+msgstr ""
+
+#: modules/content-image-credit.php:135
+msgid "Organization"
+msgstr ""
+
+#: baglama.php:108
+msgid "Settings"
+msgstr ""
+
+#: engine/site-security-and-spam.php:28
+msgid "This site does not accept registration of user accounts"
+msgstr ""
