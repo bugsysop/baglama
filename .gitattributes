@@ -1,3 +1,25 @@
-*                   text=auto
-.gitattributes      export-ignore
-.gitignore          export-ignore
+# Sourxe
+# https://github.com/alexkaratarakis/gitattributes
+
+*                           text=auto
+
+#
+# The above will handle all files NOT found below
+#
+# These files are text and should be normalized (Convert crlf => lf)
+*.gitattributes             text
+.gitignore                  text
+*.md                        text diff=markdown
+
+#
+# Exclude files from exporting
+#
+.gitattributes              export-ignore
+.gitignore                  export-ignore
+banner-1544x500.png         export-ignore
+assets/banner-772x250.png   export-ignore
+
+#
+# Enable syntax highlighting for files with `.gitattributes` extensions.
+#
+*.gitattributes             linguist-language=gitattributes
