@@ -1,14 +1,20 @@
 #### [unreleased]
 
-* Remove fat from custom admin CSS
-* Better user interface and default color scheme
+Functionalities
+* Minimalist user interface and default color scheme
 * WP pages (About, Credits, Freedom, Privacy) under `Dashboard` main menu
-* Extend the sanitize files name function
+* Extend the `sanitize` files name function
 * Add access to Block Theme edition in `Admin Menu` (under `Apparence`)
+* Add `Settings` page to manage optional modules
+* Disable comments (option)
+* Disable all RSS feeds (option)
+* Disable authors archives page (option)
 
 Bugs and problems
 * Fix non working sanitize files name function
 * Conditional code for `Admin Menu` tweaks
+* Remove fat from custom admin CSS
+* Better admin interface with CSS tweaks
 
 #### 0.1.6
 
