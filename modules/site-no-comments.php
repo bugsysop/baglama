@@ -1,10 +1,10 @@
 <?php
 /*
- * Remove comments
- * Todo: make it an option
+ * Bağlama Settings
+ * Option -- Disable comments support
+ *
  */
 
-// Removes support for post & pages
 add_action( 'init', 'baglama_remove_comment_support', 100 );
 function baglama_remove_comment_support() {
     remove_post_type_support( 'post', 'comments' );
