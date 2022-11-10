@@ -85,6 +85,7 @@ if ($baglama_tools_options !== null && $baglama_tools_options !== false) {
     if (baglama_check_valid_option("baglama_tools_feeds_function_cbx2")) {
         // -- RSS Feeds
         require_once __DIR__ . '/modules/content-rss-feeds-no-links.php';
+        require_once __DIR__ . '/content-rss-feeds-disable.php';
     }
     if (baglama_check_valid_option("baglama_tools_authors_function_cbx3")) {
         // -- Author archives
