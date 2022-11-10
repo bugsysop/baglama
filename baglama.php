@@ -89,7 +89,7 @@ if ($baglama_tools_options !== null && $baglama_tools_options !== false) {
     }
     if (baglama_check_valid_option("baglama_tools_authors_function_cbx3")) {
         // -- Author archives
-        require_once __DIR__ . '/modules/content-author-archive.php';
+        require_once __DIR__ . '/modules/content-author-archives.php';
     }
 } else {
     // -- Empty options
