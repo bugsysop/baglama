@@ -2,7 +2,7 @@
 /*
 Plugin Name: Bağlama
 Plugin URI: https://codeberg.org/_aris/baglama
-Description: Dispositif de publication expérimental basé sur WordPress
+Description: Minimalist, elegant, usable publishing dispositive for WordPress. Still experimental and in developpement
 Author: aris~
 Text Domain: baglama
 Author URI: https://papatheodorou.net/
