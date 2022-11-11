@@ -1,6 +1,6 @@
 # Bağlama
 
-Research and experiments on publishing with Wordpress
+Minimalist, elegant, usable publishing dispositive for WordPress. Still experimental and in developpement
 
 ### Description
 
