@@ -11,18 +11,7 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-// User Color Sheme
-// No baglama prefix -> See assets/css/dynamic.php -> To fix
-function slate_get_user_admin_color(){
-	$user_id = get_current_user_id();
-	$user_info = get_userdata($user_id);
-	if ( !( $user_info instanceof WP_User ) ) {
-		return;
-	}
-	$user_admin_color = $user_info->admin_color;
-	return $user_admin_color;
-}
-
+// Note: this the las function inherited from Slate. Maybe move it...
 // Remove the hyphen before the post state
 if ( is_admin() ) {
 	add_filter( 'display_post_states', 'baglama_slate_post_state', 11 );
