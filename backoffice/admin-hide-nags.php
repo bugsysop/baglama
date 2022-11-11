@@ -13,10 +13,11 @@ function baglama_remove_stupid_php_nag() {
 }
 
 // Hide invasive plugins nags
-// Target: Code Snippets
+// Targets: Code Snippets, Yoast Duplicate Post
 add_action('admin_head', 'baglama_hide_plugins_nags');
 function baglama_hide_plugins_nags() {
   echo '<style>
     .code-snippets-pro-notice { display: none; } 
+    #duplicate-post-notice { display: none !important; }
   </style>';
 }
