@@ -1,3 +1,5 @@
+![Bağlama Rule!](https://codeberg.org/_aris/baglama/raw/branch/main/assets/banner-1544x500.png)
+
 # Bağlama
 
 Minimalist, elegant, usable publishing dispositive for WordPress. Still experimental and in developpement
