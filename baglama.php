@@ -91,6 +91,11 @@ if ($baglama_tools_options !== null && $baglama_tools_options !== false) {
         // -- Author archives
         require_once __DIR__ . '/modules/content-author-archives.php';
     }
+		if (baglama_check_valid_option("baglama_tools_patterns_function_cbx4")) {
+        // -- Wordpress Core Patterns
+        //require_once __DIR__ . '/modules/content-XXX.php';
+				remove_theme_support( 'core-block-patterns' );
+    }
 } else {
     // -- Empty options
     $baglama_tools_options = array();
@@ -111,7 +116,7 @@ function baglama_public_links_settings($links)
         'baglama-links-git' => sprintf(
             '<a href="%s" target="_blank">%s</a>',
             'https://codeberg.org/_aris/baglama',
-            esc_html__('Codeberg', 'baglama')
+            esc_html__('Code', 'baglama')
         ),
     );
     return array_merge($new, $links);
