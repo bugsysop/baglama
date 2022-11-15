@@ -1,6 +1,7 @@
 [Unreleased]
 
 * Add a bulk plugins installation tool (`baglama.sh`)
+* Option to disable default WordPress block patterns
 
 #### 0.2
 
