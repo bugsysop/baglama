@@ -6,7 +6,7 @@
 
 Dev()
 {
-  wp plugin install add-admin-css create-block-theme better-search-replace --activate
+  wp plugin install add-admin-css create-block-theme better-search-replace query-monitor code-snippets --activate
 }
 Help()
 {
