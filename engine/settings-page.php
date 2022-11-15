@@ -78,7 +78,15 @@ class BaglamaTools
             array($this, 'baglama_tools_authors_function_cbx3_callback'), // callback
             'baglama-tools-admin',                            // page
             'baglama_tools_settings_section'                  // section
-        );    
+        );
+        // Checkbox 4
+        add_settings_field(
+            'baglama_tools_patterns_function_cbx4',            // Field id
+            __( 'Patterns', 'baglama' ),                       // Checkbox title
+            array($this, 'baglama_tools_patterns_function_cbx4_callback'), // callback
+            'baglama-tools-admin',                            // page
+            'baglama_tools_settings_section'                  // section
+        );
     }
     public function baglama_tools_sanitize($input) {
         $sanitary_values = array();
@@ -90,6 +98,9 @@ class BaglamaTools
         }
         if (isset($input['baglama_tools_authors_function_cbx3'])) {
             $sanitary_values['baglama_tools_authors_function_cbx3'] = $input['baglama_tools_authors_function_cbx3'];
+        }
+        if (isset($input['baglama_tools_patterns_function_cbx4'])) {
+            $sanitary_values['baglama_tools_patterns_function_cbx4'] = $input['baglama_tools_patterns_function_cbx4'];
         }
         return $sanitary_values;
     }
@@ -113,6 +124,13 @@ class BaglamaTools
             '<input type="checkbox" name="baglama_tools_option_name[baglama_tools_authors_function_cbx3]" id="baglama_tools_authors_function_cbx3" value="baglama_tools_authors_function_cbx3" %s> 
             <label for="checkbox_cbx3">' . __( 'Disable author’s archives page for public site.', 'baglama' ) . '</labe>',
             (isset($this->__baglama_tools_options['baglama_tools_authors_function_cbx3']) && $this->__baglama_tools_options['baglama_tools_authors_function_cbx3'] === 'baglama_tools_authors_function_cbx3') ? 'checked' : ''
+        );
+    }
+    public function baglama_tools_patterns_function_cbx4_callback(){
+        printf(
+            '<input type="checkbox" name="baglama_tools_option_name[baglama_tools_patterns_function_cbx4]" id="baglama_tools_patterns_function_cbx4" value="baglama_tools_patterns_function_cbx4" %s> 
+            <label for="checkbox_cbx4">' . __( 'Disable default WordPress block patterns.', 'baglama' ) . '</labe>',
+            (isset($this->__baglama_tools_options['baglama_tools_patterns_function_cbx4']) && $this->__baglama_tools_options['baglama_tools_patterns_function_cbx4'] === 'baglama_tools_patterns_function_cbx4') ? 'checked' : ''
         );
     }
 }
