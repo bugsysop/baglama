@@ -1,3 +1,7 @@
+[Unreleased]
+
+* Add a bulk plugins installation tool (`baglama.sh`)
+
 #### 0.2
 
 Functionalities
