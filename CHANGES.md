@@ -1,7 +1,10 @@
-[Unreleased]
+#### 0.2.1
 
 * Add a bulk plugins installation tool (`baglama.sh`)
 * Option to disable default WordPress block patterns
+
+Bugs and problems
+* Fix `admin.css` (interference with Editor styles)
 
 #### 0.2
 
