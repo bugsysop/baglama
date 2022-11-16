@@ -10,7 +10,7 @@ Gitea Plugin URI: https://codeberg.org/_aris/baglama
 Primary Branch: main
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
-Version: 0.2.1
+Version: 0.2.2
 Requires at least: 6.0
 Tested up to: 6.1
 Requires PHP: 7.2
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Settings
-$baglama_plugin_version = '0.2.1';
+$baglama_plugin_version = '0.2.2';
 require_once plugin_dir_path( __FILE__ ) . 'engine/settings-helpers.php';
 require_once plugin_dir_path( __FILE__ ) . 'engine/settings-page.php';
 
