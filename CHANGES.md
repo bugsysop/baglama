@@ -1,7 +1,7 @@
 ### 0.2.2
 
 Functionalities
-* Add a bulk plugins installation tool (`baglama.sh`)
+* Add a bulk plugins installation CLI tool (`baglama.sh`)
 * Option to disable default WordPress block patterns
 
 #### 0.2.1
