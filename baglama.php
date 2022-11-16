@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Settings
-$baglama_plugin_version = '0.2';
+$baglama_plugin_version = '0.2.1';
 require_once plugin_dir_path( __FILE__ ) . 'engine/settings-helpers.php';
 require_once plugin_dir_path( __FILE__ ) . 'engine/settings-page.php';
 
