@@ -1,3 +1,8 @@
+### [Unreleased]
+
+Critical Bug
+* Corrected a wrong module inclusion (was killing WP when activate RSS setting)
+
 ### 0.2.2
 
 Functionalities
