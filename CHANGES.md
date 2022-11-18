@@ -1,7 +1,7 @@
 ### 0.2.3
 
 Critical Bug
-* Correction od a wrong module inclusion (this was killing WP when RSS setting where activated)
+* Correction of a wrong module inclusion (this was killing WP when RSS setting where activated)
 
 ### 0.2.2
 
