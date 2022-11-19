@@ -6,11 +6,11 @@
 
 Dev()
 {
-  wp plugin install add-admin-css create-block-theme better-search-replace query-monitor wp-crontrol
+  wp plugin install add-admin-css create-block-theme better-search-replace debug-bar query-monitor wp-crontrol
 }
 DevAct()
 {
-  wp plugin install add-admin-css create-block-theme better-search-replace query-monitor wp-crontrol --activate
+  wp plugin install add-admin-css create-block-theme better-search-replace debug-bar query-monitor wp-crontrol --activate
 }
 Help()
 {
@@ -21,7 +21,7 @@ Help()
    echo "- Permanent: useful plugins to add more functionalities to WordPress."
    echo "- Utilities: plugins to install temporary for maintenance tasks."
    echo
-   echo "Plugins list: add-admin-css, create-block-theme, better-search-replace, query-monitor, wp-crontrol, block-manager, enable-media-replace, find-my-blocks, regenerate-thumbnails-advanced, wp-sweep, custom-post-type-cleanup"
+   echo "Plugins list: add-admin-css, create-block-theme, better-search-replace, debug-bar, query-monitor, wp-crontrol, block-manager, enable-media-replace, find-my-blocks, regenerate-thumbnails-advanced, wp-sweep, custom-post-type-cleanup"
    echo
    echo "Options:"
    echo "     d     Install developpement plugins"
