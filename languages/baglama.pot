@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bağlama\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-09 12:16+0000\n"
+"POT-Creation-Date: 2022-11-19 03:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -33,8 +33,8 @@ msgstr ""
 msgid "Bağlama"
 msgstr ""
 
-#: baglama.php:113
-msgid "Codeberg"
+#: baglama.php:119
+msgid "Code"
 msgstr ""
 
 #. Field id
@@ -46,16 +46,16 @@ msgstr ""
 msgid "Credit:"
 msgstr ""
 
-#: engine/settings-page.php:114
+#: engine/settings-page.php:125
 msgid "Disable author’s archives page for public site."
 msgstr ""
 
-#: engine/settings-page.php:107
+#: engine/settings-page.php:118
 msgid "Disable completely RSS/Atom Feeds for all post type."
 msgstr ""
 
-#. Description of the plugin
-msgid "Dispositif de publication expérimental basé sur WordPress"
+#: engine/settings-page.php:132
+msgid "Disable default WordPress block patterns."
 msgstr ""
 
 #. Field id
@@ -68,7 +68,7 @@ msgid ""
 "Follow the white rabbit. This is a skeleton for the Bağlama options page"
 msgstr ""
 
-#: engine/settings-page.php:100
+#: engine/settings-page.php:111
 msgid "Globally disable comments (admin and public site)."
 msgstr ""
 
@@ -88,11 +88,22 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
+#. Description of the plugin
+msgid ""
+"Minimalist, elegant, usable publishing dispositive for WordPress. Still "
+"experimental and in developpement"
+msgstr ""
+
 #: modules/content-image-credit.php:135
 msgid "Organization"
 msgstr ""
 
-#: baglama.php:108
+#. Field id
+#: engine/settings-page.php:85
+msgid "Patterns"
+msgstr ""
+
+#: baglama.php:114
 msgid "Settings"
 msgstr ""
 
