@@ -11,3 +11,13 @@ add_action( 'template_redirect',function(){if(isset($_GET['author'])||is_author(
 add_filter( 'user_row_actions',function($actions){if(isset($actions['view']))unset($actions['view']);return $actions;},PHP_INT_MAX,2);
 add_filter( 'author_link', function() { return '#'; }, PHP_INT_MAX );
 add_filter( 'the_author_posts_link', '__return_empty_string', PHP_INT_MAX );
+
+// Remove also authors from WP Sitemap
+add_filter('wp_sitemaps_add_provider', 'baglama_remove_authors_from_sitemap', 10, 2);
+function baglama_remove_authors_from_sitemap($provider, $name)
+{
+    if ('users' === $name) {
+        return false;
+    }
+    return $provider;
+}
