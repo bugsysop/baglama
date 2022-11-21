@@ -10,7 +10,7 @@ Minimalist, elegant, usable publishing dispositive for WordPress. Still experime
 - Primary focus on the content writing and editing experience 
 - Remove unnecessary nags and bloat from core and some plugins
 
-More information to come in the [Wiki](https://codeberg.org/_aris/baglama/wiki) pages.
+More information to come in the [Wiki](https://codeberg.org/_aris/baglama/wiki) pages on Codeberg.
 
 ### Compatibility
 
@@ -26,3 +26,9 @@ This plugin does not collect or store any user data. It does not set any cookies
 
 [GNU General Public License v2 or later](/_aris/baglama/src/branch/main/LICENSE)   
 Official version of the GNU/GPL on the [GNU Project](http://www.gnu.org/licenses/gpl-2.0.html) Web site.   
+
+### Links
+
+- [Codeberg](https://codeberg.org/_aris/baglama/) (main repository)
+- [tmprs.net](https://gitea.tmprs.net/tmprs/baglama) (mirror repository)
+- [Github](https://github.com/bugsysop/baglama) (mirror repository)
