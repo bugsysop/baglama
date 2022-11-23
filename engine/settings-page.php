@@ -27,20 +27,23 @@ class BaglamaTools
     {
         $this->__baglama_tools_options = get_option('baglama_tools_option_name'); ?>
 
-		<div class="wrap">
+		<div class="wrap baglama-tools">
 		    <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
-		    <p><?php esc_html_e( 'Follow the white rabbit. This is a skeleton for the Bağlama options page', 'baglama' ); ?></p>
+		    <p style="font-size: 15px;"><?php esc_html_e( 'On this page you can enable (or disable) some more specific functions of the plugin.', 'baglama' ); ?></p>
+        <div class="baglama-box" style="border:1px solid; border-color: #999; padding-left: 30px; padding-right: 30px; padding-bottom: 15px; margin-top: 20px; margin-bottom: 30px;">
 		    <form method="post" action="options.php">
 				<?php
             settings_fields('baglama_tools_option_group');
             do_settings_sections('baglama-tools-admin');
-            echo "<p>";
-            //submit_button();
-      		  submit_button( __( 'Save' ), 'primary', 'submit', false );
-            echo "</p>";
         ?>
-			  </form>
-		</div>
+      </div><!-- baglama-box -->
+        <?php
+            echo "<p></p>";
+      		  submit_button( __( 'Save' ), 'primary', 'submit', false );
+            echo "<p></p>";
+        ?>
+			  </form>    
+		</div><!-- wrap -->
     <?php }
     public function baglama_tools_page_init()
     {      
