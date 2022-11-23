@@ -2,6 +2,7 @@
 
 * Tweak the design of settings page (very minimal)
 * Add server info (MySQL and PHP versions) to Admin Dashboard (At a Glance widget)
+* When authors archive page is disabled: remove also authors from WP sitemap
 
 ### 0.2.3
 
