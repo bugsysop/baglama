@@ -1,3 +1,8 @@
+### [Unreleased]
+
+* Tweak the design of settings page (very minimal)
+* Add server info (MySQL and PHP versions) to Admin Dashboard (At a Glance widget)
+
 ### 0.2.3
 
 Critical Bug
